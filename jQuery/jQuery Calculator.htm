@@ -1,0 +1,78 @@
+<!--
+This Project is Started from
+19 Aug 2021 / 23:00
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ng-app | AngularJS - 2020</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+html, body {height: 100%; width: 100%; margin: 0;}
+</style>
+</head>
+<body>
+<div data-role-"page" id="main"
+<div data-role-"main" class id-"ui-content">
+
+Number1 :<Input type="text" id="txtnum1"/>
+
+Number2 :<Input type="text" id="txtnum2"/>
+
+Result :<Input type="text" id="txtnum3"/>
+
+<button id="add" data-inline-"true">Add</button>
+
+<button id="sub" data-inline-"true">subtract</button> <button id-"mul" data-inline-"true">multiply</button>
+
+<button id="div" data-inline-"true">division</button>
+
+<div id="result"></div>
+
+</div>
+</div>
+
+<script>
+$("#add").click(function()
+{
+var n1=$("#txtnum1").val();
+var n2=$("#txtnum2").val();
+var sum=parseInt(n1)+parseInt(n2);
+$("#result").html("Output: " + sum);
+$("#txtnum").val(sum);
+});
+
+$("#sub").click(function()
+{
+var n1=$("#txtnum1").val();
+var n2=$("#txtnum2").val();
+var sum=parseInt(n1)-parseInt(n2);
+$("#result").html("Output: " + sum);
+$("#txtnum").val(sum);
+});
+$("#mul").click(function()
+{
+var n1=$("#txtnum1").val();
+var n2=$("#txtnum2").val();
+var sum=parseInt(n1)*parseInt(n2);
+$("#result").html("Output: " + sum);
+$("#txtnum").val(sum);
+});
+$("#div").click(function()
+{
+var n1=$("#txtnum1").val();
+var n2=$("#txtnum2").val();
+var sum=parseInt(n1)/parseInt(n2);
+$("#result").html("Output: " + sum);
+$("#txtnum").val(sum);
+});
+
+
+</script>
+
+</body>
+</html>
